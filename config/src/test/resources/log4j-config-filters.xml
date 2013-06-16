@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+  <appender name="ROLLING_AXA" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="e:/tmp/test-logs-axa.log" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %-5p - %c - %m%n" />
+    </layout>
+    <filter class="net.courtanet.config.log4j.FcqnFilter">
+      <param name="pattern" value=".*\.axa\..*" />
+    </filter>
+  </appender>
+
+  <appender name="ROLLING_APRIL" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="e:/tmp/test-logs-april.log" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %-5p - %c - %m%n" />
+    </layout>
+    <filter class="net.courtanet.config.log4j.FcqnFilter">
+      <param name="pattern" value=".*\.april\..*" />
+    </filter>
+  </appender>
+
+  <appender name="ROLLING_GENERIC" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="e:/tmp/test-logs-generic.log" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%t] %-5p - %c - %m%n" />
+    </layout>
+    <filter class="net.courtanet.config.log4j.NotFcqnFilter">
+      <param name="pattern" value=".*\.april\..*" />
+    </filter>
+    <filter class="net.courtanet.config.log4j.NotFcqnFilter">
+      <param name="pattern" value=".*\.axa\..*" />
+    </filter>
+  </appender>
+
+  <logger name="net.courtanet">
+    <level value="DEBUG" />
+  </logger>
+  <root>
+    <level value="WARN" />
+    <appender-ref ref="ROLLING_APRIL" />
+    <appender-ref ref="ROLLING_AXA" />
+    <appender-ref ref="ROLLING_GENERIC" />
+  </root>
+</log4j:configuration>

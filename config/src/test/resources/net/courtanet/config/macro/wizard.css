@@ -1,0 +1,645 @@
+﻿/* Hacks IE 6 de Corrections Graphiques */
+* html #widget-content .ButtonsContainer DIV.Continuer {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background:url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre.gif) left 1px no-repeat;
+}
+* html #widget-content .ButtonsContainer DIV.Continuer:Hover {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background: url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre_hover.gif) left 1px no-repeat;
+}
+* html #widget-content .ButtonsContainer DIV.Retour {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background:url(../images${assurance-fond-retourner-dir}/${img-assurance-fond-retourner}) right 1px no-repeat;
+}
+* html #widget-content .ButtonsContainer DIV.Retour:Hover {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background: url(../images${assurance-fond-retourner-dir}/assurance-fond-retourner_hover.gif) right 1px no-repeat;
+}
+* html #widget-content .StyledButtonBlue, * html #widget-content .StyledButton {
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+}
+* html #widget-content .OffresTitre {
+    ${not-for-webcarcenter}height: 33px;
+}
+/* Hacks IE 7 de Corrections Graphiques */
+*+html #widget-content .ButtonsContainer DIV.Continuer {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background:url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre.gif) left 1px no-repeat;
+}
+*+html #widget-content .ButtonsContainer DIV.Continuer:Hover {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background: url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre_hover.gif) left 1px no-repeat;
+}
+*+html #widget-content .ButtonsContainer DIV.Retour {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background:url(../images${assurance-fond-retourner-dir}/${img-assurance-fond-retourner}) right 1px no-repeat;
+}
+*+html #widget-content .ButtonsContainer DIV.Retour:Hover {
+    ${not-for-webcarcenter}padding-left:2px !important;
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+    ${not-for-webcarcenter}background: url(../images${assurance-fond-retourner-dir}/assurance-fond-retourner_hover.gif) right 1px no-repeat;
+}
+*+html #widget-content .StyledButtonBlue, *+html #widget-content .StyledButton {
+    ${not-for-webcarcenter}padding-bottom:1px !important;
+}
+*+html #widget-content .OffresTitre {
+    ${not-for-webcarcenter}height: 33px;
+}
+/* End Hacks IE */
+
+#widget-content {
+    text-align: center;
+}
+
+#widget-content .WaitPanel {
+    z-index: 50;
+    cursor: wait;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+    opacity: .50;
+    -moz-opacity: .50;
+    filter: alpha(opacity = 50);
+    background-color: #444444;
+    padding-top: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#widget-content .WaitPanel * {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#widget-content .WizardContainer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#widget-content .TunnelContainerWait-fb {
+    width: 992px;
+    height: 413px;
+    color: #7D7D7D;
+    ${TunnelContainerWait}
+}
+
+#widget-content .TunnelContainerWait-fv {
+    width: 992px;
+    height: 413px;
+    color: #7D7D7D;
+    border-top: 1px dotted #D2D2D2;
+    background: url(../images${assurance-fond-notarif}/assurance-fond-attente.gif) left bottom no-repeat;
+}
+
+#widget-content .TunnelContainerWait .ButtonsContainer {
+    display: none;
+}
+
+
+#widget-content .Wait1-fb {
+    color: #999999;
+    font-size: 36px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#widget-content .Wait3-fb {
+    color: #999999;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#widget-content .Wait3-fv {
+    color: ${wait-screen-text-color};
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#widget-content .WaitBlue {
+    color: ${wait-screen-text-color};
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#widget-content .StyledButton {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: ${StyledButton-padding}px !important;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: url(../images${bouton-dir}/${img-bouton_norm_fin}) right center no-repeat;
+}
+
+#widget-content .StyledButton BUTTON {
+    width: 100%;
+    ${buttons-height};
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 25px !important;
+    padding-right: 5px !important;
+    padding-bottom: 0px;
+    background: url(../images${bouton-dir}/${img-bouton_norm_deb}) left center no-repeat;
+}
+
+#widget-content .StyledButton * {
+    text-align: center !important;
+    color: ${button-text-color} !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 12px !important;
+    white-space: nowrap !important;
+}
+
+#widget-content .StyledButtonBlue {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: ${StyledButton-padding}px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: url(../images${bouton-dir}/bouton_bleu_fin.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonBlue BUTTON {
+    width: 100%;
+    ${buttons-height};
+    text-align: left;
+    padding-top: 0px;
+    padding-left: ${StyledButtonBlue-button-padding}px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background: url(../images${bouton-dir}/bouton_bleu_deb.gif) left center no-repeat;
+}
+
+#widget-content .StyledButtonBlue:Hover {
+    background: url(../images${bouton-dir}/bouton_bleu_fin_hover.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonBlue:Hover BUTTON {
+    background: url(../images${bouton-dir}/bouton_bleu_deb_hover.gif) left center no-repeat;
+}
+
+#widget-content .StyledButtonBlue * {
+    text-align: center !important;
+    color: ${button-text-color} !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 12px !important;
+    white-space: nowrap !important;
+}
+
+#widget-content .StyledButtonInteret {
+    padding: 0 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#widget-content .StyledButtonInteret BUTTON {
+    width: 136px;
+    height: 48px;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images${btn-next-dir}/${img-btn-interet}) top left no-repeat;
+}
+
+#widget-content .StyledButtonInteret * {
+    text-align: left !important;
+    color: ${button-text-color} !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 12px !important;
+    white-space: nowrap !important;
+}
+
+#widget-content .StyledButtonTransparent {
+    width: 165px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#widget-content .StyledButtonTransparent BUTTON {
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 6px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: transparent;
+}
+
+#widget-content .StyledButtonTransparent * {
+    text-align: center !important;
+    color: ${button-text-color} !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 12px !important;
+    white-space: nowrap !important;
+}
+
+#widget-content .StyledButtonAchat, #widget-content .StyledButtonDevis, #widget-content .StyledButtonRappel,
+#widget-content .StyledButtonAchatDisabled, #widget-content .StyledButtonDevisDisabled, #widget-content .StyledButtonRappelDisabled {
+    width: 198px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#widget-content .StyledButtonAchat BUTTON, #widget-content .StyledButtonDevis BUTTON, #widget-content .StyledButtonRappel BUTTON,
+#widget-content .StyledButtonAchatDisabled BUTTON, #widget-content .StyledButtonDevisDisabled BUTTON, #widget-content .StyledButtonRappelDisabled BUTTON {
+    width: 100%;
+    height: 37px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: transparent;
+}
+
+#widget-content .StyledButtonAchatDisabled BUTTON, #widget-content .StyledButtonDevisDisabled BUTTON, #widget-content .StyledButtonRappelDisabled BUTTON {
+    cursor: default;
+}
+
+#widget-content .StyledButtonAchat {
+    background: url(../images/btn_achat.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonDevis {
+    background: url(../images/btn_devis.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonRappel {
+    background: url(../images/btn_rappel.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonAchat:hover {
+    background: url(../images/btn_achat_hover.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonDevis:hover {
+    background: url(../images/btn_devis_hover.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonRappel:hover {
+    background: url(../images/btn_rappel_hover.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonAchatDisabled {
+    background: url(../images/btn_achat_disabled.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonDevisDisabled {
+    background: url(../images/btn_devis_disabled.gif) right center no-repeat;
+}
+
+#widget-content .StyledButtonRappelDisabled {
+    background: url(../images/btn_rappel_disabled.gif) right center no-repeat;
+}
+
+#widget-content .ButtonsContainer SPAN {
+    color: ${button-text-color};
+    cursor: pointer;
+    font-size: ${boutons-font-size};
+    font-weight: bold;
+}
+
+#widget-content .ButtonsContainer DIV.Continuer {
+    ${button-container-size}
+    cursor: pointer;
+    background: url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre.gif) left top no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Continuer .gwt-Button {
+    ${button-size}
+    color: ${button-text-color};
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    background: url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre.gif) right bottom no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Continuer:Hover {
+    background: url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre_hover.gif) left top no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Continuer:Hover .gwt-Button {
+    background: url(../images${assurance-fond-suivre-dir}/assurance-fond-suivre_hover.gif) right bottom no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Retour {
+    ${button-retour-size}
+    cursor: pointer;
+    background: url(../images${assurance-fond-retourner-dir}/${img-assurance-fond-retourner}) right top no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Retour .gwt-Button {
+    ${button-retour-container-size}
+    color: ${button-retour-text-color};
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: right;
+    padding-right: 10px;
+    background: url(../images${assurance-fond-retourner-dir}/${img-assurance-fond-retourner}) left bottom no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Retour:Hover {
+    background: url(../images${assurance-fond-retourner-dir}/assurance-fond-retourner_hover.gif) right top no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Retour:Hover .gwt-Button {
+    background: url(../images${assurance-fond-retourner-dir}/assurance-fond-retourner_hover.gif) left bottom no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Comparatif {
+    ${button-comparer-container-size}
+    cursor: pointer;
+    background: url(../images${assurance-fond-comparatif-dir}/assurance-fond-comparatif.gif) left top no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Comparatif .gwt-Button {
+    ${button-comparer-size}
+    color: ${button-text-color};
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    background: url(../images${assurance-fond-comparatif-dir}/assurance-fond-comparatif.gif) right bottom no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Comparatif:Hover {
+    background: url(../images${assurance-fond-comparatif-dir}/assurance-fond-comparatif_hover.gif) left top no-repeat;
+}
+
+#widget-content .ButtonsContainer DIV.Comparatif:Hover .gwt-Button {
+    background: url(../images${assurance-fond-comparatif-dir}/assurance-fond-comparatif_hover.gif) right bottom no-repeat;
+}
+
+#widget-content .BlackLabel,
+#widget-content .BlackLabel * {
+    color: #000000;
+}
+
+#widget-content .CheckboxLabel {
+    color: #000000;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+}
+
+#widget-content .ContentPanel {
+    width: 100%;
+}
+
+#widget-content .DataPanel {
+    width: 100%;
+}
+
+#widget-content TABLE.DataPanel TD.DataPanel {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+#widget-content .Form {
+    width: 465px;
+}
+
+#widget-content .FormData {
+    width: 95%;
+    background-color: ${FormData-background};
+}
+
+#widget-content .CellFieldLabel A:hover {
+    text-decoration: underline;
+}
+
+#widget-content .CellFieldValue {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+#widget-content .SinistresPanel {
+    width: 100%;
+}
+
+#widget-content .SinistresDetails {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#widget-content .DataPanel .CellTitre,
+#widget-content .DataPanel .CellSousTitre {
+    padding-bottom: 5px;
+}
+
+#widget-content .CellTitre * {
+    color: ${CellFieldTitre-color};
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#widget-content .CellSousTitre * {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#widget-content .MessageSubtitle * {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#widget-content .MessageComparer * {
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#widget-content .MessageDetails {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#widget-content .MessageDetails * {
+    color: #444444;
+    padding-left: 5px;
+    vertical-align: top;
+}
+
+#widget-content .DataPanel .CellChamp .gwt-Label {
+    color: #74AC27;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#widget-content .ButtonsContainer {
+    margin-left: ${buttonsContainerLeftMargin};
+    margin-right: auto;
+}
+
+#widget-content .ButtonsContainer TD {
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#widget-content .ErrorField {
+    color: #FF0000 !important;
+    font-weight: bold;
+}
+
+#widget-content .ErrorLabel {
+    color: #FF0000 !important;
+    font-weight: bold;
+}
+
+#widget-content .Auto {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#widget-content .Auto TD {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#widget-content .Auto * {
+    color: #444444;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+#widget-content .width80 {
+    height: 20px;
+    width: 80px;
+    color: #000000;
+    background: url(../images/assurance-fond-select.gif) left top no-repeat;
+}
+
+#widget-content .width120 {
+    height: 20px;
+    width: 120px;
+    color: #000000;
+    background: url(../images/assurance-fond-select.gif) left top no-repeat;
+}
+
+#widget-content .textBlue {
+    color: #077DB8 !important;
+}
+
+#widget-content .textGray {
+    color: #999999 !important;
+}
+
+#widget-content .textSmall {
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+
+#widget-content .TunnelContainer {
+    width: 737px;
+    color: #7D7D7D;
+    border-top: ${TunnelContainer-border-top};
+    background: ${TunnelContainer-background};
+}
+
+#widget-content .FormTop {
+    width: 465px;
+    height: 5px;
+    background: ${FormTop-background};
+}
+
+#widget-content .FormBottom {
+    width: 465px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    background: ${FormBottom-background};
+}
+
+.SubFormTop {
+    height: 5px;
+}
+
+.SubFormBottom {
+    height: 15px;
+}
+
+#widget-content .CellFieldLabel {
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    background: url(../images${fond-fleche-dir}/assurance-fond-fleche-dte.gif) left 10px no-repeat;
+}
+
+#widget-content .CellFieldLabel *{
+    color: ${CellFieldLabel-color};
+    text-align: left;
+    font-weight: ${CellFieldLabel-font-weight};
+}
+
+#widget-content .CellFieldLabel A {
+    color: ${CellFieldLabel-A-color};
+    text-decoration: none;
+}
+
+#widget-content .TextIntro {
+    ${TextIntro}
+}

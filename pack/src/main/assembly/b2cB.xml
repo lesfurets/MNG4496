@@ -1,0 +1,24 @@
+<assembly
+  xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+  <id>b2cB</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <!-- override conf with b2cB specifics -->
+    <!-- On place d'abord les ressources specifiques a cette instance -->
+    <fileSet>
+      <directory>src/main/instances/instance_b2cB/</directory>
+      <outputDirectory>/instance_b2cB</outputDirectory>
+    </fileSet>
+    <!-- put instance_b2c not overriden content -->
+    <!-- On place ensuite les ressources generiques car elles n'ecrasent pas les ressources deja existantes -->
+    <fileSet>
+      <directory>src/main/instances/instance_b2cA/</directory>
+      <outputDirectory>/instance_b2cB</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>
